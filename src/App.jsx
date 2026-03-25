@@ -8,11 +8,15 @@ function App() {
   ]);
 
   const addEmployee = (employee) => {
-    setEmployees([...employees, { ...employee, status: "Actif" }]);
+    setEmployees((prevEmployees) => [
+      ...prevEmployees,
+      { ...employee, status: "Actif" }
+    ]);
   };
 
   return (
     <div>
+      <h1>Gestion des employés</h1>
       <EmployeeForm addEmployee={addEmployee} />
       <EmployeeList employees={employees} />
     </div>
