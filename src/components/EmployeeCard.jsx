@@ -1,6 +1,7 @@
+import "./EmployeeCard.css";
 function EmployeeCard({ employee }) {
   return (
-    <div>
+    <div className="card">
       <p>Nom : {employee.name}</p>
       <p>Poste : {employee.position}</p>
       <p>Département : {employee.department}</p>
