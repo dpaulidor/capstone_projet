@@ -1,4 +1,5 @@
 import EmployeeCard from "./EmployeeCard";
+import "./EmployeeList.css";
 
 function EmployeeList({ employees }) {
   if (employees.length === 0) {
@@ -6,7 +7,7 @@ function EmployeeList({ employees }) {
   }
 
   return (
-    <div>
+    <div className="list-container">
       {employees.map((emp, index) => (
         <EmployeeCard key={index} employee={emp} />
       ))}
