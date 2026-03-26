@@ -17,7 +17,6 @@ function App() {
       <h1>Application Employee</h1>
       <EmployeeForm addEmployee={addEmployee} />
       <EmployeeList employees={employees} />
-      <EmployeeCard employee={employees[0]} />
 
     </div>
   );
