@@ -1,15 +1,14 @@
 import { useState } from "react";
 import EmployeeList from "./components/EmployeeList";
 import EmployeeForm from "./components/EmployeeForm";
-import EmployeeCard from "./components/EmployeeCard";
-
+import "./App.css";
 function App() {
   const [employees, setEmployees] = useState([
-    { name: "John Doe", position: "Manager", department: "HR", status: "Actif" },
+    { name: "John Doe", position: "Manager", department: "HR" },
   ]);
 
   const addEmployee = (employee) => {
-    setEmployees([...employees, { ...employee, status: "Actif" }]);
+    setEmployees([...employees, { ...employee }]);
   };
 
   return (
