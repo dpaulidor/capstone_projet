@@ -4,7 +4,7 @@ import EmployeeForm from "./components/EmployeeForm";
 import "./App.css";
 function App() {
   const [employees, setEmployees] = useState([
-    { name: "John Doe", position: "Manager", department: "HR" },
+    { name: "", position: "", department: "" },
   ]);
 
   const addEmployee = (employee) => {
